@@ -2,8 +2,8 @@
 #include <Arduino.h>
 #include <WiFi.h>
 
-const char * ssid = "virus5";
-const char * password = "a1b2c3d4";
+const char * ssid = "iPhonepedro";
+const char * password = "pedro2002";
 
 WiFiServer server(80);
 
@@ -34,6 +34,7 @@ String getTipoCifrado(wifi_auth_mode_t tipoCifrado){
     case (WIFI_AUTH_MAX):  
             return "WPA_MAX";      
   }
+  return "Desconocido";
 }
 
 void escanearRedes(){
